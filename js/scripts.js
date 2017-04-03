@@ -25,11 +25,9 @@ $(function(){
     {
       var newTask = new Todo(taskInput, deadlineInput);
       var chore = new Date().getMilliseconds();
-      console.log(chore);
 
       $("#result-to-do-list").prepend("<li><span id='" + chore + "'>" + newTask.todoString() + "</span></li>");
-      console.log(newTask.todoString());
-
+    
       $("#task").val("");
       $("#deadline").val("");
 
@@ -42,5 +40,3 @@ $(function(){
     }
   });
 });
-// var completed = $(this).text();
-// console.log(completed);
